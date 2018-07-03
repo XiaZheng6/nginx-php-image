@@ -1,5 +1,6 @@
-FROM baseimage-nginx-php56:latest
+FROM baseimage-php56:latest
 
 ENV TZ="Asia/Shanghai"
 
-ADD neon_api /data/www/
+COPY neon_api /data/www/neon_api
+COPY ng_api.conf /usr/local/nginx/conf/nginx.conf
