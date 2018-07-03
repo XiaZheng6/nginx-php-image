@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    image: "neon/web:latest"
+    ports:
+     - "16888:80"
+    # links:
+    #   - socket
+  api:
+    image: "neon/api:latest"
+    ports:
+      - "16889:80"
+  socket:
+    image: "neon/socket:latest"
+    ports:
+      - "16890:80"
+      - "2050:2050"
+      - "2051:2051"
