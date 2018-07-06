@@ -1,4 +1,4 @@
-FROM baseimage-nginx-php56:latest
+FROM baseimage-php56:latest
 
 ENV TZ="Asia/Shanghai"
 
