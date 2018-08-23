@@ -8,7 +8,7 @@
 
 ### 基础镜像
 
-此镜像以centos7.2为base，编译安装nginx和php，使用supervisord进行多进程管理。
+此镜像以 centos7.2 为 base，编译安装 nginx 和 php，使用 supervisord 进行多进程管理。
 
 #### baeseimage-php56
 
@@ -32,7 +32,7 @@ Dockerfile:
 
 ### 服务镜像
 
-以基础镜像为base，将服务代码和相关配置拷贝至主目录（不同服务的主目录不同，需特别注意）。
+以基础镜像为 base，将服务代码和相关配置拷贝至主目录（不同服务的主目录不同，需特别注意）。
 
 #### neon/web
 
@@ -327,7 +327,7 @@ daemon off;
 
 
 
-#### 宿主机Nginx配置
+#### 宿主机 Nginx 配置
 
 不同服务配置不同端口，且端口固定，不可更改，配置文件在vhost目录下
 
